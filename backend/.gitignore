@@ -1,0 +1,95 @@
+# =========================
+# Python / Django
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Static Files (if collected)
+# =========================
+staticfiles/
+static_root/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Python Packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# =========================
+# Logs & Debug
+# =========================
+*.log
+debug.log
+
+# =========================
+# Celery / Redis (if used)
+# =========================
+celerybeat-schedule
+celerybeat.pid
+
+# =========================
+# Django Cache
+# =========================
+*.cache
+
+# =========================
+# Jupyter / Experiments (optional)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Migrations (optional – see note)
+# =========================
+# **DO NOT ignore migrations in production apps**
+# Uncomment only for throwaway projects
+# */migrations/*.py
+# !*/migrations/__init__.py
