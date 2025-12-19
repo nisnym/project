@@ -6,72 +6,104 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.488 0.243 264.376);
-    --primary-foreground: oklch(0.97 0.014 254.604);
-    --secondary: oklch(0.967 0.001 286.375);
-    --secondary-foreground: oklch(0.21 0.006 285.885);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.58 0.22 27);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.546 0.245 262.881);
-    --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --background: #ffffff;
+    --foreground: #1f2937;
+    --card: #ffffff;
+    --card-foreground: #1f2937;
+    --popover: #ffffff;
+    --popover-foreground: #1f2937;
+    
+    /* Primary - HCL Blue (#006BB6) */
+    --primary: #006BB6;
+    --primary-foreground: #ffffff;
+    
+    /* Secondary Colors from HCL Palette */
+    --secondary: #f8fafc;
+    --secondary-foreground: #1f2937;
+    
+    /* Muted tones using HCL grays */
+    --muted: #f5f7fa;
+    --muted-foreground: #64748b;
+    
+    /* Accent - Secondary HCL Blue tone */
+    --accent: #469BD2;
+    --accent-foreground: #ffffff;
+    
+    /* Destructive - Error state */
+    --destructive: #EB1946;
+    --destructive-foreground: #ffffff;
+    
+    /* Success - Green from secondary palette */
+    --success: #ADD136;
+    --success-foreground: #000000;
+    
+    /* Warning - Orange from secondary palette */
+    --warning: #F5821E;
+    --warning-foreground: #ffffff;
+    
+    /* Info - Cyan from secondary palette */
+    --info: #00AFBE;
+    --info-foreground: #ffffff;
+    
+    /* Borders and inputs */
+    --border: #e2e8f0;
+    --input: #ffffff;
+    --ring: #006BB6;
+    
+    /* Chart colors using HCL palette */
+    --chart-1: #006BB6;
+    --chart-2: #469BD2;
+    --chart-3: #5FC0E0;
+    --chart-4: #8CD7FA;
+    --chart-5: #B9E6FA;
+    
+    /* Radius */
+    --radius: 0.5rem;
+    
+    /* Sidebar */
+    --sidebar: #ffffff;
+    --sidebar-foreground: #1f2937;
+    --sidebar-primary: #006BB6;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f8fafc;
+    --sidebar-accent-foreground: #1f2937;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #006BB6;
 }
 
 .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.42 0.18 266);
-    --primary-foreground: oklch(0.97 0.014 254.604);
-    --secondary: oklch(0.274 0.006 286.033);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.371 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.623 0.214 259.815);
-    --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    /* HCL Brand Colors - Dark Mode with darker variants */
+    --background: #1B1B1B;
+    --foreground: #ffffff;
+    --card: #333333;
+    --card-foreground: #ffffff;
+    --popover: #333333;
+    --popover-foreground: #ffffff;
+    --primary: #469BD2;
+    --primary-foreground: #ffffff;
+    --secondary: #424242;
+    --secondary-foreground: #ffffff;
+    --muted: #333333;
+    --muted-foreground: #999999;
+    --accent: #00AFBE;
+    --accent-foreground: #ffffff;
+    --destructive: #EB1946;
+    --border: #424242;
+    --input: #333333;
+    --ring: #469BD2;
+    --chart-1: #469BD2;
+    --chart-2: #5FC0E0;
+    --chart-3: #8CD7FA;
+    --chart-4: #B9E6FA;
+    --chart-5: #ADD136;
+    --sidebar: #333333;
+    --sidebar-foreground: #ffffff;
+    --sidebar-primary: #469BD2;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #333333;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #424242;
+    --sidebar-ring: #469BD2;
 }
 
 @theme inline {
@@ -93,6 +125,13 @@
     --color-input: var(--input);
     --color-border: var(--border);
     --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
+    --color-warning: var(--warning);
+    --color-warning-foreground: var(--warning-foreground);
+    --color-info: var(--info);
+    --color-info-foreground: var(--info-foreground);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent: var(--accent);
     --color-muted-foreground: var(--muted-foreground);
@@ -126,4 +165,92 @@
   html {
     @apply font-sans;
     }
+}
+
+@layer components {
+  /* HealthBuddy Design System - Natural shadcn-style components */
+  
+  /* Status badges using HCL color palette */
+  .status-low {
+    background-color: hsl(var(--success) / 0.1);
+    color: hsl(var(--success));
+    border: 1px solid hsl(var(--success) / 0.2);
+  }
+  
+  .status-medium {
+    background-color: hsl(var(--warning) / 0.1);
+    color: hsl(var(--warning));
+    border: 1px solid hsl(var(--warning) / 0.2);
+  }
+  
+  .status-high {
+    background-color: hsl(var(--destructive) / 0.1);
+    color: hsl(var(--destructive));
+    border: 1px solid hsl(var(--destructive) / 0.2);
+  }
+  
+  .status-info {
+    background-color: hsl(var(--info) / 0.1);
+    color: hsl(var(--info));
+    border: 1px solid hsl(var(--info) / 0.2);
+  }
+  
+  /* Health metric cards */
+  .metric-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) - 2px);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .metric-card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Progress indicators */
+  .progress-success {
+    background-color: hsl(var(--success));
+  }
+  
+  .progress-warning {
+    background-color: hsl(var(--warning));
+  }
+  
+  .progress-danger {
+    background-color: hsl(var(--destructive));
+  }
+  
+  .progress-info {
+    background-color: hsl(var(--info));
+  }
+  
+  .progress-primary {
+    background-color: hsl(var(--primary));
+  }
+  
+  /* Icon colors using HCL palette */
+  .icon-primary {
+    color: hsl(var(--primary));
+  }
+  
+  .icon-success {
+    color: hsl(var(--success));
+  }
+  
+  .icon-warning {
+    color: hsl(var(--warning));
+  }
+  
+  .icon-danger {
+    color: hsl(var(--destructive));
+  }
+  
+  .icon-info {
+    color: hsl(var(--info));
+  }
+  
+  .icon-muted {
+    color: hsl(var(--muted-foreground));
+  }
 }
