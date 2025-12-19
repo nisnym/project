@@ -6,8 +6,8 @@ A full-stack healthcare wellness and preventive care portal that seamlessly inte
 - Frontend: React.js
 - Backend: Python Django
 - Database: MongoDB(NoSQL) using MongoDB Atlas Cloud
-
-![Architecture Diagram](./frontend_app/public/system.png)
+## System Architecture
+<img src="./frontend_app/public/system.png" alt="System Architecture" width="500">
 
 
 ## Wireframes
