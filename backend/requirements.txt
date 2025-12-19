@@ -1,0 +1,12 @@
+Django>=5.0,<7.0
+djangorestframework>=3.15
+mongoengine>=0.29
+python-dotenv>=1.0
+
+# CORS (React frontend calls)
+django-cors-headers>=4.3
+
+# JWT Auth (if you use login/token)
+djangorestframework-simplejwt>=5.3
+
+
