@@ -11,7 +11,6 @@ import {
   Plus, 
   CheckCircle, 
   TrendingUp, 
-  Calendar,
   Footprints,
   Droplet,
   Moon,
@@ -93,13 +92,6 @@ export const PatientGoals = () => {
 
   const getProgress = (current: number, target: number) => {
     return Math.min((current / target) * 100, 100);
-  };
-
-  const getProgressColor = (progress: number) => {
-    if (progress >= 100) return 'bg-green-500';
-    if (progress >= 75) return 'bg-blue-500';
-    if (progress >= 50) return 'bg-yellow-500';
-    return 'bg-gray-300';
   };
 
   const GoalCard = ({ goal }: { goal: any }) => {
