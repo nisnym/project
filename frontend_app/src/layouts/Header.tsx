@@ -25,12 +25,6 @@ export const Header = () => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <Link
-              to="/health-info"
-              className="text-gray-700 hover:text-blue-600"
-            >
-              Health Information
-            </Link>
             {!user && (
               <>
                 <Link to="/login" className="text-gray-700 hover:text-blue-600">

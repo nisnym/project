@@ -1,24 +1,29 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from '@/context/AuthContext';
-import { ProtectedRoute } from '@/components/ProtectedRoute';
-import { MainLayout } from '@/layouts/MainLayout';
-import { DashboardLayout } from '@/layouts/DashboardLayout';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { AuthProvider, useAuth } from "@/context/AuthContext";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { MainLayout } from "@/layouts/MainLayout";
+import { DashboardLayout } from "@/layouts/DashboardLayout";
 
 // Public pages
-import { Home } from '@/pages/Home';
-import { Login } from '@/pages/Login';
-import { Signup } from '@/pages/Signup';
-import { HealthInfo } from '@/pages/HealthInfo';
+import { Home } from "@/pages/Home";
+import { Login } from "@/pages/Login";
+import { Signup } from "@/pages/Signup";
+import { HealthInfo } from "@/pages/HealthInfo";
 
 // Patient pages
-import { PatientDashboard } from '@/pages/patient/PatientDashboard';
-import { PatientAppointments } from '@/pages/patient/PatientAppointments';
-import { PatientGoals } from '@/pages/patient/PatientGoals';
-import { PatientProfile } from '@/pages/patient/PatientProfile';
+import { PatientDashboard } from "@/pages/patient/PatientDashboard";
+import { PatientAppointments } from "@/pages/patient/PatientAppointments";
+import { PatientGoals } from "@/pages/patient/PatientGoals";
+import { PatientProfile } from "@/pages/patient/PatientProfile";
 
 // Doctor pages
-import { DoctorDashboard } from '@/pages/doctor/DoctorDashboard';
-import { DoctorPatients } from '@/pages/doctor/DoctorPatients';
+import { DoctorDashboard } from "@/pages/doctor/DoctorDashboard";
+import { DoctorPatients } from "@/pages/doctor/DoctorPatients";
 
 function AppContent() {
   const { user } = useAuth();
@@ -38,7 +43,14 @@ function AppContent() {
         path="/login"
         element={
           user ? (
-            <Navigate to={user.role === 'patient' ? '/patient/dashboard' : '/doctor/dashboard'} replace />
+            <Navigate
+              to={
+                user.role === "patient"
+                  ? "/patient/dashboard"
+                  : "/doctor/dashboard"
+              }
+              replace
+            />
           ) : (
             <Login />
           )
@@ -48,7 +60,14 @@ function AppContent() {
         path="/signup"
         element={
           user ? (
-            <Navigate to={user.role === 'patient' ? '/patient/dashboard' : '/doctor/dashboard'} replace />
+            <Navigate
+              to={
+                user.role === "patient"
+                  ? "/patient/dashboard"
+                  : "/doctor/dashboard"
+              }
+              replace
+            />
           ) : (
             <Signup />
           )

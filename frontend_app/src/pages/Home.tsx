@@ -20,14 +20,35 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Your Health, <span className="text-white/80">Our Priority</span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">
+                Track Your Wellness Journey Here
               </h1>
-              <p className="text-xl mb-8 text-white/70">
-                Comprehensive healthcare wellness and preventive care portal.
-                Helping patients achieve health goals and maintain compliance
-                with preventive checkups.
-              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-lg">
+                    Track your daily health goals and stay on top of wellness
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-lg">
+                    Never miss preventive checkups with smart reminders
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-lg">
+                    Connect with healthcare providers seamlessly
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-lg">
+                    Maintain compliance with personalized care plans
+                  </span>
+                </li>
+              </ul>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/signup">
                   <Button
@@ -243,15 +264,6 @@ export const Home = () => {
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/login">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
-              >
-                Sign In
               </Button>
             </Link>
           </div>
