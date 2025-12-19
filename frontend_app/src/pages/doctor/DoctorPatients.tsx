@@ -7,7 +7,6 @@ import { Select } from '@/components/ui/select';
 import { 
   Users, 
   Search, 
-  Filter, 
   Target, 
   TrendingUp, 
   Calendar,
@@ -16,8 +15,7 @@ import {
   AlertTriangle,
   CheckCircle,
   Clock,
-  Heart,
-  Activity
+
 } from 'lucide-react';
 
 export const DoctorPatients = () => {

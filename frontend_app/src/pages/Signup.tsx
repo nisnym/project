@@ -32,7 +32,8 @@ export const Signup = () => {
     }
 
     try {
-      await signup({
+      // cast signup to any so we can pass password (password isn't on Partial<User> type)
+      await (signup as any)({
         firstName: form.firstName,
         lastName: form.lastName,
         email: form.email,

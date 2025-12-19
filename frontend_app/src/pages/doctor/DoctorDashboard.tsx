@@ -6,7 +6,6 @@ import {
   Users, 
   Calendar, 
   AlertTriangle, 
-  CheckCircle,
   TrendingUp,
   Clock,
   Heart,
