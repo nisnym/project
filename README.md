@@ -7,7 +7,7 @@ A full-stack healthcare wellness and preventive care portal that seamlessly inte
 - Backend: Python Django
 - Database: MongoDB(NoSQL) using MongoDB Atlas Cloud
 
-![Architecture Diagram](./frontend/public/system.png)
+![Architecture Diagram](./frontend_app/public/system.png)
 
 
 ## Wireframes
